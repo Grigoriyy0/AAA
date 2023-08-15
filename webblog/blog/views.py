@@ -6,3 +6,8 @@ class PostView(View):
     def get(self, request):
         posts = Post.objects.all()
         return render(request, 'blog/blog.html', {'postList': posts})
+
+class PostDetail(View):
+    def get(self, request, pk):
+        post = Post.objects.get(id=pk)
+        return render(request, 'blog/blog_detail.html', {'post': post})

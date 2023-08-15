@@ -27,20 +27,37 @@
 			<div id="content" class="left">
 				
 				<div class="projects">
-					<h3>Записи</h3>
-					{% for post in postList %}
+					<h3>{{ post.title }}</h3>
+                    <p align="center"><img src="{{ post.image.url }}" alt="" width="60%"/></p>
 					<div class="item">
-						<div class="image left">
-							<a href="#"><img src="{{ post.image.url }}" alt="" width="200px"/></a>
-						</div>
+
 						<div class="text left">
-							<h4><a href="{{ post.id }}">{{ post.title }}</a></h4>
+							<h4></h4>
 							<p width="100wv">{{ post.description }}</p>
 							<p>Автор: {{ post.author }} </p>
 						</div>
 						<div class="cl"></div>
 					</div>
-					{% endfor %}
+					<div class="form-comment">
+						<h3>Оставить комментарий</h3>
+						<div>
+							<form action="#" method="post">
+							<div><label>Ваш комментарий</label>
+								<textarea name="text_comments"></textarea>
+							</div>
+							<div><label>Ваше имя*</label>
+								<input type="text" name="name">
+							</div>
+							<div><label>Ваш email*</label>
+								<input type="email" name="email">
+							</div>
+							<div><input type="submit"></div>
+							</form>
+						</div>
+					</div>
+
+
+
 				</div>
 			</div>
 			
@@ -55,4 +72,3 @@
 	</div>
 </div>
 </body>
-</html>
