@@ -29,7 +29,7 @@ textarea { overflow:auto; }
 
 #navigation { height: 43px; border-top: 1px solid #dbdbdb; border-bottom: 1px solid #dbdbdb; }
 #navigation ul { list-style: none; }
-#navigation ul li { float: left; height: 43px; border-right: 1px solid #dbdbdb; font-size: 12px; line-height: 43px; font-weight: bold; text-transform: uppercase; }
+#navigation ul li { float: left; height: 43px; border-right: 1px solid #dbdbdb; font-size: 12px; line-height: 43px; font-weight: bold; text-transform: uppercase; font-family: 'Ubuntu', sans-serif; }
 #navigation ul li a { float: left; height: 43px; color: #000; padding: 0 33px; }
 #navigation ul li a:hover, 
 #navigation ul li a.active { color: #ff0000; text-decoration: none; }
@@ -48,10 +48,10 @@ textarea { overflow:auto; }
 .projects { font-size: 20px; padding: 10px 0 0 0; font-family: 'Ubuntu', sans-serif;}
 .projects h3 { margin: 0 0 17px 0; }
 .projects .item { margin: 0 0 28px 0; }
-.projects .image { width: 183px; height: 111px; border: 0px solid #dbdbdb; padding: 2px; margin: 0 20px 0 3px; }
-.projects .text { width: 600px; }
+.projects .image { border: 0px solid #dbdbdb; padding: 2px; margin: 0 20px 0 3px; }
+.projects .text { width: 1100px; text-align: justify;}
 .projects .text h4 { font-size: 20px; line-height: 15px; color: #333; text-transform: uppercase; padding: 3px 0 2px 0; font-family: 'Ubuntu', sans-serif;}
-.projects .text p { padding: 10 0 3px 0; font-family: 'Ubuntu', sans-serif; font-size: 15px;}
+.projects .text p { padding: 10 0 3px 0; font-family: 'Ubuntu', sans-serif; font-size: 15px;word-wrap: break-word; word-break: break-all; text-align: justify;}
 
 .btn-buy:hover { text-decoration: none; }
 

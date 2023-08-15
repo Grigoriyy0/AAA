@@ -6,6 +6,9 @@ class Post(models.Model):
     description = models.TextField('Текст записи')
     author = models.CharField('Имя автора', max_length=100)
     date = models.DateField('Дата публикации')
+    image = models.ImageField('Изображение', upload_to='image/%Y')
+
+
 
     class Meta:
         verbose_name = 'Запись'
